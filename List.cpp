@@ -3,9 +3,6 @@
 #include"List.h"
 
 
-
-List::List() = default;
-
 void List::AddElement(Node* node)
 {
 	if (head == nullptr)
@@ -79,3 +76,16 @@ std::string List::coutString()
 }
 
 
+
+
+
+List::~List()
+{
+	Node* current = head;
+	while (current)
+	{
+		Node* Next = current->Next;
+		delete current;
+		current = Next;
+	}
+}

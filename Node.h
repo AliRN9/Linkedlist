@@ -9,5 +9,4 @@ public:
 	Node* Next = nullptr;
 	Node(int data);
 	std::string ToString();
-	//~Node();
 };

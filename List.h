@@ -6,10 +6,9 @@
 class List
 {
 public:
-	Node* head;
-	List();
+	Node* head=nullptr;
 	std::string coutString();
 	void AddElement(Node* node);
 	void Delete_node(int value);
-	
+	~List();
 };
